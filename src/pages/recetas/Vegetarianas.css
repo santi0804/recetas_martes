@@ -41,13 +41,42 @@
 }
 
 .cards section div button::after,
-.cards section div a::after{}
+.cards section div a::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 100%;
+    transition: left 0.5s ease-in-out;  /* Jugar con la transición*/
+    background-color: black;
+}
+
+.cards section div button:hover::after,
+.cards section div a:hover:after{
+    left: 50%;
+}
+
+.cards section div .eliminar::after {   /* Efecto de derecha a izquierda*/
+    border: solid 1px rgb(203, 38, 38);
+    background-color: rgb(219, 25, 25);  
+}
+
+.cards section div .editar::after { 
+    border: solid 1px rgb(44, 224, 17);
+    background-color: rgb(44, 224, 17);  
+}
+
+.cards section div .detalle::after { 
+    border: solid 1px rgb(17, 38, 224);
+    background-color: rgb(17, 38, 224);  
+}
 
 .cards section div button::before, /*Estos son los seudoelementos*/
 .cards section div a::before{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 2px;
     bottom: 0;
     left: -100%;
@@ -55,7 +84,7 @@
 
 }
 
-.cards section div .eliminar::before { 
+.cards section div .eliminar::before {    /*Efecto de Izquierda a derecha*/
     border: solid 1px rgb(203, 38, 38);
     background-color: rgb(219, 25, 25);  
 }
