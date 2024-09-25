@@ -1,0 +1,65 @@
+.cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cards section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 400px;
+    height: 200px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 10px black;
+    padding: 10px;
+}
+
+.cards section div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards section div button,
+ .cards section div a {  /* Estilos a los botones internos de cada receta*/
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 30px;
+    background:none;
+    border: solid;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    overflow: hidden;  /*COn esta no existe el scroll*/
+}
+
+.cards section div button::after,
+.cards section div a::after{}
+
+.cards section div button::before, /*Estos son los seudoelementos*/
+.cards section div a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    border: solid 1px black;
+    background-color: black;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+
+}
+
+.cards section div button:hover::before, /*Estos son los seudoelementos*/
+.cards section div a:hover::before{
+    left: 0%;
+    
+
+}
