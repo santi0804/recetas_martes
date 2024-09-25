@@ -50,12 +50,26 @@
     width: 100%;
     height: 2px;
     bottom: 0;
-    border: solid 1px black;
-    background-color: black;
     left: -100%;
     transition: left 0.5s ease-in-out;
 
 }
+
+.cards section div .eliminar::before { 
+    border: solid 1px rgb(203, 38, 38);
+    background-color: rgb(219, 25, 25);  
+}
+
+.cards section div .editar::before { 
+    border: solid 1px rgb(44, 224, 17);
+    background-color: rgb(44, 224, 17);  
+}
+
+.cards section div .detalle::before { 
+    border: solid 1px rgb(17, 38, 224);
+    background-color: rgb(17, 38, 224);  
+}
+
 
 .cards section div button:hover::before, /*Estos son los seudoelementos*/
 .cards section div a:hover::before{

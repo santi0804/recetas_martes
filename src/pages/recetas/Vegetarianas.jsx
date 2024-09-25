@@ -13,9 +13,9 @@ const Vegetarianas = () => {
             <p>Dificultad: {receta.dificultad}</p>
             <p>Tiempo: {receta.tiempo}</p>
             <div>
-              <button>Eliminar</button>  {/* se pone etiqueta normal*/}
-              <Link>Editar</Link>
-              <Link>Detalles</Link>  {/*Navego a otro componento redireciono y pongo otro enlace por eso se renderiza */}
+              <button className="eliminar">Eliminar</button>  {/* se pone etiqueta normal*/}
+              <Link className="editar">Editar</Link>
+              <Link className="detalle">Detalles</Link>  {/*Navego a otro componento redireciono y pongo otro enlace por eso se renderiza */}
 
             </div>
           </section>
