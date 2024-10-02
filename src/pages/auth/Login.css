@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    background-image: url('public/fondo.jpg');
+    background-image: url('public/fondo2.avif');
     background-position: center center; /* estilos importantes para las imagenes tipo responsive*/
     background-size: cover;   /* como voy a tomar las img*/
     background-repeat: repeat;
@@ -22,4 +22,25 @@
     flex-direction: column;
     backdrop-filter: blur(10px);  /*efecto especial de opaco*/
 
+}
+
+.form section div{
+    gap: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form section div input{
+    height: 25px;
+    outline: none;
+}
+
+.button{
+    width: 30%;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: none;
+    cursor: pointer;
+    background-color: aqua;
 }
