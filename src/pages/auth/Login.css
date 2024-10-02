@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(10px);  /*efecto especial de opaco*/
+    backdrop-filter: blur(15px);  /*efecto especial de opaco*/
 
 }
 
