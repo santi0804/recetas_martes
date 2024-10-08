@@ -2,24 +2,34 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .panel-control {
     width: 100%;
-    height: 700px;
+    height: 600px;
     display: flex;
+    background-image: url('./public/fondo1.jpg'); /* Agrega la imagen de fondo */
+    background-color: rgba(255, 255, 255, 0.7); /* Aplica un color blanco semitransparente */
+    background-blend-mode: lighten; /* Mezcla la imagen con el color para dar un efecto de marca de agua */
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
 .panel-control nav {
-    width: 25%;
+    width: 22%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('./public/fondo5.jpg');
+    background-color: rgba(255, 255, 255, 0.3);
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */ 
+    background-blend-mode: lighten; 
     gap: 20px;
-    background-color: rgba(172, 170, 170, 0.629);
     height: 100%;
     justify-content: center;
 }
@@ -30,10 +40,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 30px;
+    width: 80%;  /* Hancho de los Botones*/
+    height: 40px;
     background-color: black;
     color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.panel-control nav a:hover {   /* Estilos cuando se hace hover */
+    background-color: rgba(174, 223, 193, 0.473); /* Cambia el color de fondo */
+    color: black; /* Color del texto cuando cambia el hover*/
+    transform: scale(1.05); /* Añade un ligero zoom */
 }
 
 .panel-control section {

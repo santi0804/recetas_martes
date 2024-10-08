@@ -4,24 +4,24 @@ export let recetasVegetarianas = [
     
     {
         id: 1,
-        nombre: 'Tofu',
-        descripcion: 'Receta a base de Tofu y otros vegetales',
+        nombre: 'Curry de Garbanzos',
+        descripcion: 'Un plato cremoso y especiado a base de garbanzos, leche de coco y especias aromáticas, acompañado de arroz basmati.',
         dificultad: 'Media',
-        tiempo: '3 Horas'
+        tiempo: '1.5 Horas'
     },
     {
         id: 2,
-        nombre: 'Hamburguesa Artesanal',
-        descripcion: 'Hamburguesa vegetariana a base de Lentejas y otros granos',
+        nombre: 'Tacos de Coliflor al Pastor',
+        descripcion: 'Tacos de coliflor marinada en salsa al pastor, servidos con piña, cebolla y cilantro, acompañados de tortillas de maíz.',
         dificultad: 'Media',
-        tiempo: '2 Horas'
+        tiempo: '1 Hora'
     },
     {
         id: 3,
-        nombre: 'Tocino Vegetariano',
-        descripcion: 'Tocino a base de harina y maiz con fécula',
+        nombre: 'Lasaña de Berenjena y Espinacas',
+        descripcion: 'Una deliciosa lasaña sin carne, hecha con capas de berenjena, espinacas, queso ricotta y salsa de tomate casera.',
         dificultad: 'Alta',
-        tiempo: '4 Horas'
+        tiempo: '2.5 Horas'
     },
     {
         id: 4,
@@ -31,6 +31,8 @@ export let recetasVegetarianas = [
         tiempo: '2 Horas'
     },
 ]
+
+
 export let recetasNoVegetarianas = [
 
     {
@@ -42,7 +44,7 @@ export let recetasNoVegetarianas = [
     },
     {
         id: 2,
-        nombre: 'Hamburguesa doble carne',
+        nombre: 'Hamburguesa Doble Carne',
         descripcion: 'Carne asada al carbon, queso chedar, ensalada',
         dificultad: 'Media',
         tiempo: '1 Horas'

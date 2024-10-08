@@ -2,6 +2,7 @@ import Header from "../components/Header"
 import { Link, Outlet } from 'react-router-dom'
 import './Dashboard.css'
 
+
 const Dashboard = () => {
     return (
         <main>
