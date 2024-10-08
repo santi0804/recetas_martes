@@ -1,8 +1,13 @@
 import { recetasVegetarianas } from "../../data/recetas"
 import {Link} from "react-router-dom"
 import './Vegetarianas.css'
+
+
 const Vegetarianas = () => {
+
+
   return (
+    
     <div className="cards">
       {
         recetasVegetarianas.map((receta) => (
