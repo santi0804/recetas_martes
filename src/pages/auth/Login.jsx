@@ -2,10 +2,25 @@ import React, { useState } from "react";
 import './Login.css';
 
 
+let urlUsuarios = "http://localhost:3000/usuarios"
+
+
+
+
 const Login = () => {
 
      const [usuario, setUsuario] = useState('');
      const [contraseña, setContraseña] = useState('');
+     const [usuarios, setUsuarios] = useState([]);    /*El estado por defecto es un arreglo vacio */
+
+     function getUsuarios (){
+        fetch ('http://localhost:3000/usuarios')
+        .then(response => response.json())
+        .then(json => console.log(json))
+        
+     }
+
+
     
     function signIn(){      /*Esta es la funcion del login- con la function regular*/
         if(usuario == 'Rogelio' && contraseña == '123456') {
