@@ -1,5 +1,52 @@
-
 {
-    "usuarios": []
-    
+  "usuarios": [
+    {
+      "id": "001",
+      "user": "admin",
+      "password": "abc123",
+      "name": "Rogelio",
+      "email": "rogelio@gmail.com",
+      "hobbies": [
+        "Hacer Dinero",
+        "Gym",
+        "Comer"
+      ]
+    },
+    {
+      "id": "002",
+      "user": "newuser",
+      "password": "abc123",
+      "name": "santiago",
+      "email": "santiago@gmail.com",
+      "hobbies": [
+        "Hacer Dinero",
+        "Gym",
+        "Comer"
+      ]
+    },
+    {
+      "id": "891e",
+      "user": "superadmin",
+      "password": "abc123",
+      "name": "Mariana",
+      "email": "mariana@gmail.com",
+      "hobbies": [
+        "Hacer Dinero",
+        "Gym",
+        "Comer"
+      ]
+    },
+    {
+      "id": "7324",
+      "user": "superadmin",
+      "password": "abc123",
+      "name": "valeria",
+      "email": "valeria@gmail.com",
+      "hobbies": [
+        "Hacer Dinero",
+        "Gym",
+        "Comer"
+      ]
+    }
+  ]
 }
