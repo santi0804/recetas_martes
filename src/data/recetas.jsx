@@ -1,6 +1,6 @@
 
 
-export let recetasVegetarianas = [
+export let recetasVegetarianas = [  /* Ya no vamos a trabajar con información estatica */
     
     {
         id: 1,

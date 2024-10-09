@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import './Login.css';
 
 
-
-
-
 const Login = () => {
 
      const [usuario, setUsuario] = useState('');
@@ -17,10 +14,7 @@ const Login = () => {
         else{
             alert('Error al ingresar')
         }
-
-    
     }
-
 
     return (
         <form className="form" action="">
