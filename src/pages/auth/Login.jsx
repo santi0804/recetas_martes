@@ -33,13 +33,11 @@ const Login = () => {
         }
     }
     
-    
-    
-    function findUser() {
+
+
+    function findUser() {    /*funcion para controlar el login */
 
     }
-
-
 
     return (
         <form className="form" action="">
