@@ -25,19 +25,24 @@ const Login = () => {
 
     
     function signIn(){      /*Esta es la funcion del login- con la function regular*/
-        if(usuario == 'Rogelio' && contraseña == '123456') {
+        
+        if(findUser()) {    /*De esta manera solo necesito el llamado de la función. */
             alert('Inicio de sesión correcto')
         }
         else{
             alert('Error al ingresar')
-        }
+        } 
     }
     
 
-
-    function findUser() {    /*funcion para controlar el login */
-
+    function findUser() {         /*Con el metod some funcion para controlar el login */
+         let auth = usuarios.some((item) => item.user == usuario && item.password == contraseña) 
+        return auth 
     }
+
+    /*Con el metodo find puedo estraer datos */
+
+
 
     return (
         <form className="form" action="">

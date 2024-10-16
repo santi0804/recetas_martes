@@ -3,7 +3,7 @@
     {
       "id": "001",
       "user": "admin",
-      "password": "abc123",
+      "password": "12345",
       "name": "Rogelio",
       "email": "rogelio@gmail.com",
       "hobbies": [
@@ -14,8 +14,8 @@
     },
     {
       "id": "002",
-      "user": "newuser",
-      "password": "abc123",
+      "user": "Rogelio",
+      "password": "123456",
       "name": "santiago",
       "email": "santiago@gmail.com",
       "hobbies": [
