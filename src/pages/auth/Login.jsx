@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
+
 
 let urlUsuarios = "http://localhost:3000/usuarios"
 
@@ -8,6 +10,9 @@ const Login = () => {
      const [usuario, setUsuario] = useState('');
      const [contraseña, setContraseña] = useState('');
      const [usuarios, setUsuarios] = useState([]);    /*El estado por defecto es un arreglo vacio */
+        let redireccion = useNavigate()
+
+
 
      function getUsuarios (){     /*Función anclada a la promesa que exoiste en el index html */
         fetch (urlUsuarios)
@@ -27,11 +32,8 @@ const Login = () => {
     function signIn(){      /*Esta es la funcion del login- con la function regular*/
         
         if(findUser()) {    /*De esta manera solo necesito el llamado de la función. */
-            alert('Inicio de sesión correcto')
-        }
-        else{
-            alert('Error al ingresar')
-        } 
+            redireccion('/')  /* Ruta de navegación a mi Dashboard*/
+        }                     /*Tener presente  los TimeMouse de animación de cargue antes de Ingresar al dashboard*/
     }
     
 
