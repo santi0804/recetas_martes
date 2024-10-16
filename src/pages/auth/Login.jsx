@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './Login.css';
 
-
 let urlUsuarios = "http://localhost:3000/usuarios"
-
-
-
 
 const Login = () => {
 
@@ -13,13 +9,19 @@ const Login = () => {
      const [contraseña, setContraseña] = useState('');
      const [usuarios, setUsuarios] = useState([]);    /*El estado por defecto es un arreglo vacio */
 
-     function getUsuarios (){
-        fetch ('http://localhost:3000/usuarios')
-        .then(response => response.json())
-        .then(json => console.log(json))
+     function getUsuarios (){     /*Función anclada a la promesa que exoiste en el index html */
+        fetch (urlUsuarios)
+                .then(response => response.json())    
+                .then(json => setUsuarios(json))
+                .catch(error => console.log(error))
         
      }
 
+     useEffect(() => {    /* Siempre recibe 2 parametros una funcion y un arreglo vacios */
+         getUsuarios()    /*Esta es la función que quiero que se ejecute dentro de la misa función useeffect */
+
+     }, [])               /*EL arreglo vacio me garantiza que se ejecute solo una unica vez y corta el ciclo infinito */
+     console.log(usuarios)  
 
     
     function signIn(){      /*Esta es la funcion del login- con la function regular*/
@@ -30,6 +32,14 @@ const Login = () => {
             alert('Error al ingresar')
         }
     }
+    
+    
+    
+    function findUser() {
+
+    }
+
+
 
     return (
         <form className="form" action="">
