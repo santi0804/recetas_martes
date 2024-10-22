@@ -47,6 +47,18 @@
         "Gym",
         "Comer"
       ]
+    },
+    {
+      "id": "991f",
+      "user": "newuser1",
+      "password": "0123",
+      "name": "Amelia",
+      "email": "amelia@gmail.com",
+      "hobbies": [
+        "Modelo",
+        "Gym",
+        "Cenar"
+      ]
     }
   ]
 }
