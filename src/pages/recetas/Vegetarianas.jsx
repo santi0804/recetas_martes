@@ -11,8 +11,7 @@ const Vegetarianas = () => {
     <div className="cards">
       {
         recetasVegetarianas.map((receta) => (
-          <section key={receta.id}> 
-            {/* <p>Id: {receta.id}</p> */}
+          <section key={receta.id}>   {/* <p>Id: {receta.id}</p> */}
             <p>Nombre: {receta.nombre}</p>
             <p>Descripcion: {receta.descripcion}</p>
             <p>Dificultad: {receta.dificultad}</p>

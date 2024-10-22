@@ -7,14 +7,15 @@ let urlUsuarios = "http://localhost:3000/usuarios"
 
 const Login = () => {
 
-     const [usuario, setUsuario] = useState('');
+     const [usuario, setUsuario] = useState('');    /* El singular el usuario*/
      const [contraseña, setContraseña] = useState('');
-     const [usuarios, setUsuarios] = useState([]);    /*El estado por defecto es un arreglo vacio */
-        let redireccion = useNavigate()
+     const [usuarios, setUsuarios] = useState([]);    /*El estado en "prural" por defecto es un arreglo vacio */
+       
+     let redireccion = useNavigate()
 
 
 
-     function getUsuarios (){     /*Función anclada a la promesa que exoiste en el index html */
+     function getUsuarios (){     /*Función anclada a la promesa que existe en el index html */
         fetch (urlUsuarios)
                 .then(response => response.json())    
                 .then(json => setUsuarios(json))
@@ -49,6 +50,7 @@ const Login = () => {
     return (
         <form className="form" action="">
             <section className="">
+
                 <div>
                     <label htmlFor="usuario">Usuario</label>
                     <input onChange={(e) => {setUsuario(e.target.value)}} id="usuario" type="text" />  {/*onChange se conoce como un eventoS */}

@@ -13,7 +13,7 @@ const Dashboard = () => {
                     <Link to='no-vegetarianas'>Recetas No Vegetarianas</Link>
                 </nav>
                 <section>
-                    <Outlet />
+                    <Outlet />   {/*Rutas  que se mostrarán dentro del espacio reservado*/}
                 </section>
             </section>
         </main>
