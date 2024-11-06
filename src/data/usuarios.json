@@ -59,6 +59,22 @@
         "Gym",
         "Cenar"
       ]
+    },
+    {
+      "id": "3c27",
+      "user": "",
+      "password": "",
+      "name": "",
+      "email": "",
+      "hobbies": ""
+    },
+    {
+      "id": "26d3",
+      "user": "Santiago",
+      "password": "1234",
+      "name": "Santiagotp",
+      "email": "santama.1988@gmail.com",
+      "hobbies": "DInero"
     }
   ]
 }

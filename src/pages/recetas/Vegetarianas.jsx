@@ -18,7 +18,7 @@ const Vegetarianas = () => {
             <p>Tiempo: {receta.tiempo}</p>
             <div>
               <button className="eliminar">Eliminar</button>  {/* se pone etiqueta normal*/}
-              <Link className="editar">Editar</Link>
+              <Link to = {'/editar-receta-vegetariana'} className="editar">Editar</Link>  {/*Asi se redirecciona el enrutador */}
               <Link className="detalle">Detalles</Link>  {/*Navego a otro componento redireciono y pongo otro enlace por eso se renderiza */}
 
             </div>

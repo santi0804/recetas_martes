@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Login.css';
 
 
@@ -64,6 +64,8 @@ const Login = () => {
                 <br />
 
                 <button onClick={signIn} className="button" type="button"> Iniciar sesión</button>
+                <br />
+                <Link to="/register">¿No tiene cuenta - registrate Putito?</Link>
             </section>
         </form>
     )
