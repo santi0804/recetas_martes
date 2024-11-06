@@ -1,9 +1,23 @@
-import { recetasVegetarianas } from "../../data/recetas"
 import {Link} from "react-router-dom"
 import './Vegetarianas.css'
+import { useState, useEffect } from "react"
 
+let urlRecetas = 'http://localhost:3000/vegetarianas'
 
 const Vegetarianas = () => {
+  const [recetasVegetarianas, setRecetasVegetarianas] = useState([])
+
+function consultarRecetas() {
+  fetch(urlRecetas)
+  .then(response => response.json()) // Entonces si tengo respuesta
+  .then(json =>setRecetasVegetarianas(json))
+  .catch(error => console.log(error));
+}
+
+useEffect(()=> {
+  consultarRecetas()
+}, [])
+  
 
 
   return (
