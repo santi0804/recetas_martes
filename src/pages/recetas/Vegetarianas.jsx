@@ -13,17 +13,18 @@ const Vegetarianas = () => {
 function consultarRecetas() {
   fetch(urlRecetas)
   .then(response => response.json()) // Entonces si tengo respuesta
-  .then(json =>setRecetasVegetarianas(json))
-  .catch(error => console.log(error));
+  .then(json =>setRecetasVegetarianas(json))    // Estas son promesas
+  .catch(error => console.log(error));         // Estas son promesas
 }
 
 useEffect(()=> {
-  consultarRecetas()
+  consultarRecetas();
 }, []);
 
 
-function eliminarReceta(){
-  axios.delete(urlRecetas + id);  // COn este metodo puedo eliminar, combino l URL +s el id
+async function eliminarReceta(id){             //con los Metodos Async y await puedo ejecutar el refresc del sitio.
+  await axios.delete(urlRecetas + "/" + id);  // Con este metodo puedo eliminar, combino l URL + '/' + el id
+  consultarRecetas();                         // DE ESTA FORMA SE REFRESCA AUTOMATICAMENTE LA PAGINA.
 }
 
 function confirmarEliminarReceta(id, nombre) {

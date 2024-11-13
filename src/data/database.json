@@ -24,10 +24,10 @@
   "vegetarianas": [
     {
       "id": "1",
-      "nombre": "Curry de Garbanzos",
-      "descripcion": "Un plato cremoso y especiado a base de garbanzos, leche de coco y especias aromáticas, acompañado de arroz basmati.",
-      "dificultad": "Media",
-      "tiempo": "1.5 Horas"
+      "nombre": "Carne Asada",
+      "descripcion": "Corte Ribagy.",
+      "dificultad": "Alta",
+      "tiempo": "1 Hora"
     },
     {
       "id": "2",
