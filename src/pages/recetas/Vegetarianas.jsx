@@ -30,7 +30,7 @@ async function eliminarReceta(id){             //con los Metodos Async y await p
 function confirmarEliminarReceta(id, nombre) {
   Swal.fire({
     title: "Estas seguro?",
-    text: "Se va a eliminar la receta!" + nombre,
+    text: "!!Se va a eliminar la receta¡¡ " + nombre,
     icon: "!! Danger ¡¡",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
@@ -60,7 +60,7 @@ function confirmarEliminarReceta(id, nombre) {
             <p>Tiempo: {receta.tiempo}</p>
             <div>
               <button onClick={()=> confirmarEliminarReceta(receta.id, receta.nombre)} className="eliminar">Eliminar</button>  {/* se pone etiqueta normal*/}
-              <Link to = {'/editar-receta-vegetariana'} className="editar">Editar</Link>  {/*Asi se redirecciona el enrutador */}
+              <Link to = {"/editar-receta-vegetariana/" + receta.id} className="editar">Editar</Link>  {/*Asi se redirecciona el enrutador */}
               <Link className="detalle">Detalles</Link>  {/*Navego a otro componento redireciono y pongo otro enlace por eso se renderiza */}
             </div>
           </section>
